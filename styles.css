@@ -1,0 +1,14 @@
+.flex-container {
+    display: flex;
+}
+
+img {
+    height: 100vh;
+    margin: -8px;
+    padding: 0;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
