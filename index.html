@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="flex-container">
-        <img src="img/wolfgang-hasselmann-red-tree-unsplash.png" alt="red tree in field">
+        <div class="img-container">
+            <img src="img/wolfgang-hasselmann-red-tree-unsplash.png" alt="red tree in field">
+            <footer>
+                <p>Photo by Wolfgang Hasselmann on Unsplash</p>
+            </footer>
+        </div>
         <div class="right-container">
             <p>This is not a real online service! You know you need something like this in your 
                 life to help you realize your deepest dreams. Sign up now to get started.</p>
@@ -16,10 +21,49 @@
             <div class="right-middle">
                 <p>Let's do this!</p>
                 <form action="" method="get" class="sign-up-form">
-                    <div class="first-row">
-                        <label for="first-name">First Name</label>
-                        <input class="first-name" name="first-name" type="text">
+                    <div class="middle-row">
+                        <div class="first-column">
+                            <div class="name-row">
+                                <label for="first-name">First Name</label>
+                                <input class="first-name" name="first-name" type="text">
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       placeholder="you@example.com">
+                            </div>
+                            <div class="password-row">
+                                <label for="password">Password</label>
+                                <input type="password"
+                                       id="password"
+                                       name="password">
+                            </div>
+                        </div>
+                        <div class="second-column">
+                            <div class="name-row">
+                                <label for="last-name">Last Name</label>
+                                <input class="last-name" name="last-name" type="text">
+                            </div>
+                            <div class="form-row">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel"
+                                       id="phone"
+                                       name="phone">
+                            </div>
+                            <div class="password-row">
+                                <label for="password">Confirm Password</label>
+                                <input type="password"
+                                       id="password"
+                                       name="password">
+                            </div>
+                        </div>
                     </div>
+                    <div class="submit-row">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <p>Already have an account? Log in</p>
                 </form>
             </div>
         </div>
