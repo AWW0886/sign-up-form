@@ -1,14 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .flex-container {
     display: flex;
 }
 
 img {
     height: 100vh;
-    margin: -8px;
     padding: 0;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
+    border: 1px solid lightgrey;
+}
+
+p {
+    border: 1px solid lightgrey;
+}
+
+.sign-up-form {
+    background-color: lightgrey;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid darkgrey;
+    padding: 5px;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid darkgrey;
+    padding: 5px;
+}
+
+.third-row {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid darkgrey;
+    padding: 5px;
 }
