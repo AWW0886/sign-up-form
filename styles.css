@@ -4,46 +4,90 @@
     box-sizing: border-box;
 }
 
+label,
+input {
+    display: block;
+}
+
 .flex-container {
     display: flex;
 }
 
 img {
     height: 100vh;
-    padding: 0;
+}
+
+.img-credit {
+    position: absolute;
+    bottom: 8px;
+    left: 110px;
+    color: whitesmoke;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid lightgrey;
-}
-
-p {
-    border: 1px solid lightgrey;
-}
-
-.sign-up-form {
+    justify-content: center;
+    /*border: 1px solid lightgrey;*/
     background-color: lightgrey;
 }
 
-.first-row {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid darkgrey;
-    padding: 5px;
+p {
+    /*border: 1px solid lightgrey;*/
 }
 
-.second-row {
+.middle-row {
     display: flex;
+    background-color: whitesmoke;
     justify-content: space-around;
-    border: 1px solid darkgrey;
-    padding: 5px;
+    box-shadow: 5px 5px 5px grey;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
-.third-row {
+.name-row,
+.form-row,
+.password-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.first-column {
     display: flex;
-    justify-content: space-around;
-    border: 1px solid darkgrey;
-    padding: 5px;
+    flex-direction: column;
+    /*border: 1px solid darkgrey;*/
+    
+}
+
+.second-column {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid darkgrey;*/
+    
+}
+
+.submit-row {
+    /*border: 1px solid darkgrey;*/
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+button {
+    background-color: darkolivegreen;
+    font-size: 16px;
+    font-weight: bold;
+
+    color: whitesmoke;
+
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2.5px 2.5px 5px grey;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.login-row {
+    margin-top: 5px;
+    margin-left: 50px;
 }
