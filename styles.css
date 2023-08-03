@@ -2,11 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*font-family: 'playfair_displayregular';*/
+    font-family: 'dm_serif_displayregular';
+    /*font-family: 'oswaldregular';*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('webfonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('webfonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dm_serif_displayregular';
+    src: url('webfonts/dmserifdisplay-regular-webfont.woff2') format('woff2'),
+         url('webfonts/dmserifdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('webfonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+         url('webfonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p {
+    font-size: 26px;
+    margin-right: 50px;
+    margin-left: 50px;   
 }
 
 label,
 input {
     display: block;
+    font-size: 18px;
 }
 
 .flex-container {
@@ -29,18 +65,28 @@ img {
     flex-direction: column;
     justify-content: center;
     /*border: 1px solid lightgrey;*/
-    background-color: lightgrey;
+    background-color: gainsboro;
 }
 
 p {
     /*border: 1px solid lightgrey;*/
 }
 
+.right-top {
+}
+
+.first-line {
+    margin-bottom: 30px;
+    margin-right: 125px;
+}
+
 .middle-row {
     display: flex;
-    background-color: whitesmoke;
-    justify-content: space-around;
-    box-shadow: 5px 5px 5px grey;
+    flex-direction: column;
+    background-color: white;
+    /*justify-content: space-around;*/
+    box-shadow: 5px 5px 5px darkgrey;
+    margin-top: 40px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -52,10 +98,16 @@ p {
     margin-bottom: 10px;
 }
 
+.columns-row {
+    display: flex;
+    margin-top: 10px;
+}
+
 .first-column {
     display: flex;
     flex-direction: column;
     /*border: 1px solid darkgrey;*/
+    margin-left: 50px;
     
 }
 
@@ -63,7 +115,7 @@ p {
     display: flex;
     flex-direction: column;
     /*border: 1px solid darkgrey;*/
-    
+    margin-left: 50px;
 }
 
 .submit-row {
@@ -83,11 +135,19 @@ button {
     border-radius: 3px;
     box-shadow: 2.5px 2.5px 5px grey;
 
-    padding: 10px 40px;
+    padding: 10px 50px;
     cursor: pointer;
 }
 
-.login-row {
-    margin-top: 5px;
-    margin-left: 50px;
+.login-row p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.img-credit a {
+    color: whitesmoke;
+}
+
+.login-row a {
+    color: darkolivegreen;
 }
