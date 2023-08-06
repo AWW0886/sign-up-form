@@ -16,9 +16,6 @@
 
 .img-container {
     display: flex;
-    /*background-attachment: fixed;*/
-    /*width: max(70%, 300px);*/
-    /*background-color: gainsboro;*/
     font-size: 1rem;
 }
 
@@ -55,7 +52,6 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*border: 1px solid lightgrey;*/
     background-color: gainsboro;
 }
 
@@ -69,24 +65,15 @@ input {
 }
 
 .first-line {
-    /*margin-right: 200px;*/
     width: clamp(25ch, 80%, 75ch);
     margin-bottom: 20px;
-    /*margin-left: 50px;*/
 }
-
-/*.first-line {
-    margin-bottom: 10px;
-    margin-right: 200px;
-}*/
 
 .middle-row {
     display: flex;
     flex-direction: column;
     background-color: white;
-    /*justify-content: space-around;*/
     box-shadow: 5px 5px 5px darkgrey;
-    /*margin-top: 20px;*/
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 50px;
@@ -107,7 +94,6 @@ input {
 .columns-row {
     display: flex;
     justify-content: space-between;
-    /*flex-wrap: wrap;*/
     margin-top: 10px;
     width: 60%;
 }
@@ -115,24 +101,17 @@ input {
 .first-column {
     display: flex;
     flex-direction: column;
-    /*border: 1px solid darkgrey;*/
     margin-right: 25px;
 }
 
 .second-column {
     display: flex;
     flex-direction: column;
-    /*border: 1px solid darkgrey;*/
 }
 
 .bottom-row {
     padding-top: 40px;
     padding-left: 50px;
-}
-
-.submit-row {
-    /*border: 1px solid darkgrey;*/
-    /*padding-bottom: 10px;*/
 }
 
 button {
