@@ -34,9 +34,11 @@
                 <form action="" method="get" class="sign-up-form">
                     <div class="middle-row">
                         <p class="middle-text">Let's do this!</p>
-                        <div class="columns-row">
-                            <div class="first-column">
-                                <div class="name-row">
+                        <!-- <div class="columns-row">
+                            <div class="first-column"> -->
+                        <div class="form-rows">
+                            <div class="name-row">
+                                <div class="name">
                                     <label for="first-name">First Name</label>
                                     <input class="first-name" 
                                            name="first-name"
@@ -44,22 +46,47 @@
                                            required
                                            minlength="1">
                                 </div>
-                                <div class="form-row">
+                                <div class="name">
+                                    <label for="last-name">Last Name</label>
+                                    <input class="last-name"
+                                           name="last-name"
+                                           type="text"
+                                           required
+                                           minlength="1">
+                                </div>
+                            </div>
+                            <div class="info-row">    
+                                <div class="form">
                                     <label for="email">Email</label>
                                     <input type="email"
                                            id="email"
                                            name="email"
                                            placeholder="you@example.com">
                                 </div>
-                                <div class="password-row">
+                                <div class="form">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel"
+                                           id="phone"
+                                           name="phone">
+                                </div>
+                            </div>
+                            <div class="password-row">   
+                                <div class="password">
                                     <label for="password">Password</label>
                                     <input type="password"
                                            id="password"
                                            name="password">
                                 </div>
+                                <div class="password">
+                                    <label for="password">Confirm Password</label>
+                                    <input type="password"
+                                           id="password"
+                                           name="password">
+                                </div>
                             </div>
-                            <div class="second-column">
-                                <div class="name-row">
+                        </div>
+                            <!-- <div class="second-column"> -->
+                            <!--    <div class="name-row">
                                     <label for="last-name">Last Name</label>
                                     <input class="last-name"
                                            name="last-name"
@@ -78,9 +105,9 @@
                                     <input type="password"
                                            id="password"
                                            name="password">
-                                </div>
-                            </div>
-                        </div>
+                                </div> -->
+                    <!--        </div>
+                        </div> -->
                     </div>   
                     <div class="bottom-row">
                         <div class="submit-row">
