@@ -36,7 +36,9 @@
 .img-container {
     display: flex;
     background-attachment: fixed;
-    width: min(60%);
+    /*width: min(50%, 100vw);*/
+    /*background-color: gainsboro;*/
+    font-size: 1rem;
 }
 
 p {
@@ -69,9 +71,8 @@ input {
 }
 
 .img-credit {
-    font-size: 1rem;
     position: absolute;
-    bottom: 8px;
+    bottom: 2.5%;
     left: 130px;
     color: whitesmoke;
 }
@@ -92,7 +93,7 @@ input {
 .right-top {
     display: flex;
     flex-direction: column;
-    
+    padding-bottom: 20px;
     width: 100%;
     /*margin-left: 50px;*/
     /*padding-left: 50px;*/
@@ -103,8 +104,9 @@ input {
     font-size: 1.75rem;
     margin-bottom: 20px;
     /*margin-right: 200px;*/
-    width: clamp(25ch, 70%, 75ch);
-    margin-left: 50px;;
+    width: clamp(25ch, 80%, 75ch);
+    /*margin-left: 50px;*/
+    padding-left: max(50px);
 }
 
 /*.first-line {
@@ -118,7 +120,7 @@ input {
     background-color: white;
     /*justify-content: space-around;*/
     box-shadow: 5px 5px 5px darkgrey;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     padding-top: 20px;
     padding-bottom: 30px;
     width: 100%;
@@ -140,7 +142,8 @@ input {
     justify-content: space-between;
     /*flex-wrap: wrap;*/
     margin-top: 10px;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
+    padding-left: 50px;
     width: 60%;
     max-width: 70%;
 }
