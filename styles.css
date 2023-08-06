@@ -2,19 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: 'playfair_displayregular';*/
     font-family: 'dm_serif_displayregular';
-    /*font-family: 'oswaldregular';*/
     font-weight: bold;
 }
-
-/*@font-face {
-    font-family: 'playfair_displayregular';
-    src: url('webfonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('webfonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}*/
 
 @font-face {
     font-family: 'dm_serif_displayregular';
@@ -24,34 +14,19 @@
     font-style: normal;
 }
 
-/*@font-face {
-    font-family: 'oswaldregular';
-    src: url('webfonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
-         url('webfonts/oswald-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
-
 .img-container {
     display: flex;
-    background-attachment: fixed;
-    /*width: min(50%, 100vw);*/
+    /*background-attachment: fixed;*/
+    /*width: max(70%, 300px);*/
     /*background-color: gainsboro;*/
     font-size: 1rem;
-}
-
-p {
-    /*font-size: 26px;*/
-    /*font-size: 1.75rem;*/
-    /*margin-right: 75px;*/
-    /*margin-left: 50px;*/
 }
 
 label,
 input {
     display: block;
     font-size: 1.25rem;
+    width: clamp(20ch, 100%, 30ch);
 }
 
 .flex-container {
@@ -66,8 +41,7 @@ input {
 }
 
 .tiger-image {
-    /*position: relative;*/
-    height: 100vh;  
+    height: 100vh;
 }
 
 .img-credit {
@@ -91,10 +65,7 @@ input {
     font-size: 1.75rem;
     padding-bottom: 40px;
     width: 100%;
-    /*margin-left: 50px;*/
-    /*padding-left: 50px;*/
-    /*padding-left: var(--blockPadding) max(2rem, 50 - var(contentWidth) / 2);*/
-    padding-left: min(50px);
+    padding-left: 50px;
 }
 
 .first-line {
@@ -138,16 +109,13 @@ input {
     justify-content: space-between;
     /*flex-wrap: wrap;*/
     margin-top: 10px;
-    /*margin-left: 50px;*/
     width: 60%;
-    max-width: 70%;
 }
 
 .first-column {
     display: flex;
     flex-direction: column;
     /*border: 1px solid darkgrey;*/
-    /*margin-left: 50px;*/
     margin-right: 25px;
 }
 
@@ -155,8 +123,6 @@ input {
     display: flex;
     flex-direction: column;
     /*border: 1px solid darkgrey;*/
-    /*margin-left: 50px;*/
-    
 }
 
 .bottom-row {
@@ -184,6 +150,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    opacity: 0.5;
+}
+
 .login-row p {
     font-size: 1rem;
     margin-top: 10px;
@@ -195,4 +165,71 @@ button {
 
 .login-row a {
     color: darkolivegreen;
+}
+
+@media only screen and (max-width: 700px) {
+  
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-container {
+        display: flex;
+        height: 50vh;
+    }
+
+    .img-credit {
+        position: absolute;
+        top: 2.5%;
+    }
+
+    .tiger-image {
+        width: 100vw;
+    }
+
+    .right-top {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        padding-top: 40px;
+        padding-left: 0;
+    }
+
+    .middle-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .middle-text {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input {
+        width: 30ch;
+    }
+
+    .columns-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-column {
+        margin-right: 0;
+    }
+
+    .bottom-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
 }
