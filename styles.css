@@ -14,11 +14,6 @@
     font-style: normal;
 }
 
-.img-container {
-    display: flex;
-    font-size: 1rem;
-}
-
 label,
 input {
     display: block;
@@ -46,6 +41,11 @@ input {
     bottom: 2.5%;
     left: 130px;
     color: whitesmoke;
+    font-size: 1rem;
+}
+
+.img-credit a {
+    color: whitesmoke;
 }
 
 .right-container {
@@ -60,13 +60,13 @@ input {
     flex-direction: column;
     font-size: 1.75rem;
     padding-bottom: 40px;
-    width: 100%;
     padding-left: 50px;
+    width: 100%;
 }
 
 .first-line {
-    width: clamp(25ch, 80%, 75ch);
     margin-bottom: 20px;
+    width: clamp(25ch, 80%, 75ch);
 }
 
 .middle-row {
@@ -80,15 +80,22 @@ input {
     width: 100%;
 }
 
-.middle-text {
-    font-size: 1.75rem;
-}
-
 .name-row,
-.form-row,
+.info-row,
 .password-row {
+    display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.name,
+.form,
+.password {
+    padding-right: 25px;
+}
+
+.middle-text {
+    font-size: 1.75rem;
 }
 
 .columns-row {
@@ -104,10 +111,10 @@ input {
     margin-right: 25px;
 }
 
-.second-column {
+/*.second-column {
     display: flex;
     flex-direction: column;
-}
+}*/
 
 .bottom-row {
     padding-top: 40px;
@@ -136,10 +143,6 @@ button:hover {
 .login-row p {
     font-size: 1rem;
     margin-top: 10px;
-}
-
-.img-credit a {
-    color: whitesmoke;
 }
 
 .login-row a {
@@ -184,6 +187,7 @@ button:hover {
 
     .middle-text {
         font-size: 1.5rem;
+        margin-bottom: 7.5px;
     }
 
     label {
@@ -191,8 +195,24 @@ button:hover {
     }
 
     input {
-        width: 30ch;
+        margin-bottom: 5px;
+        width: 25ch;
     }
+
+    .name-row,
+    .info-row,
+    .password-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .name,
+    .form,
+    .password {
+        padding-right: 0;
+}
 
     .columns-row {
         display: flex;
