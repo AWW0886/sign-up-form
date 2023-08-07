@@ -18,6 +18,10 @@
     display: flex;
 }
 
+/*.img-container {
+    width: 60%;
+}*/
+
 .img-odin {
     position: absolute;
     top: 20px;
@@ -95,7 +99,7 @@ label,
 input {
     display: block;
     font-size: 1rem;
-    width: clamp(20ch, 100%, 30ch);
+    width: clamp(15ch, 100%, 30ch);
 }
 
 input {
@@ -132,7 +136,7 @@ button:hover {
     color: darkolivegreen;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
 
     .flex-container {
         display: flex;
@@ -149,8 +153,9 @@ button:hover {
         top: 2.5%;
     }
 
-    .tiger-image {
+    .img-tiger {
         width: 100vw;
+        background-size: cover;
     }
 
     .right-top {
@@ -182,6 +187,17 @@ button:hover {
         width: 25ch;
     }
 
+    .bottom-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
     .name-row,
     .info-row,
     .password-row {
@@ -195,13 +211,5 @@ button:hover {
     .form,
     .password {
         padding-right: 0;
-}
-
-    .bottom-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 40px;
-        padding-left: 0;
     }
 }
