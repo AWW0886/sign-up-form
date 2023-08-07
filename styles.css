@@ -146,6 +146,7 @@ button:hover {
 
     .img-container {
         display: flex;
+        background-position-y: -200px;
         height: 50vh;
     }
 
