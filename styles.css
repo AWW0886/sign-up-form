@@ -199,7 +199,7 @@ button:hover {
 @media only screen and (max-width: 600px) {
 
     .img-container {
-        background-position-y: -125px;
+        background-position-y: -100px;
     }
 
     .name-row,
