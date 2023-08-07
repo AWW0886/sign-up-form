@@ -18,9 +18,14 @@
     display: flex;
 }
 
-/*.img-container {
-    width: 60%;
-}*/
+.img-container {
+    display: flex;
+    position: relative;
+    background: url(img/rob-potter-tiger-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
 
 .img-odin {
     position: absolute;
@@ -29,16 +34,12 @@
     height: 5%;
 }
 
-.img-tiger {
-    height: 100vh;
-}
-
 .img-credit {
     position: absolute;
-    bottom: 2.5%;
-    left: 130px;
+    bottom: 1.5%;
+    right: 2.5%;
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .img-credit a {
@@ -136,7 +137,7 @@ button:hover {
     color: darkolivegreen;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
 
     .flex-container {
         display: flex;
@@ -150,12 +151,10 @@ button:hover {
 
     .img-credit {
         position: absolute;
-        top: 2.5%;
     }
 
     .img-tiger {
         width: 100vw;
-        background-size: cover;
     }
 
     .right-top {
