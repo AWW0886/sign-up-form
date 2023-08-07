@@ -146,7 +146,7 @@ button:hover {
 
     .img-container {
         display: flex;
-        background-position-y: -200px;
+        background-position-y: -250px;
         height: 50vh;
     }
 
@@ -197,6 +197,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .img-container {
+        background-position-y: -125px;
+    }
 
     .name-row,
     .info-row,
