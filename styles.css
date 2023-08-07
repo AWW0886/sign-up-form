@@ -98,6 +98,10 @@ input {
     width: clamp(20ch, 100%, 30ch);
 }
 
+input {
+    font-size: 1.25rem;
+}
+
 .bottom-row {
     padding-top: 40px;
     padding-left: 50px;
