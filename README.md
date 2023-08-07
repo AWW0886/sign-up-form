@@ -10,3 +10,6 @@ Still a few things to figure out: The image credit to be more responsive and adj
 
 August UPDATE #3:
 Added another screen width... Still cant quite get the image to do what I want it to... Same goes for the credit and making it more responsive...
+
+August UPDATE #4:
+Figured out issues mentioned in update #3.  Not sure if it's possible, but when shrinking the image into the next width, I'd like to start the image lower so the face of the tiger would show more initially.
